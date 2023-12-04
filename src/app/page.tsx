@@ -1,12 +1,13 @@
-import React from "react";
-import About from "./components/about/about";
-import Skills from "./components/skills/skills";
-import TestimonialsSection from "./components/testimonials/testimonialsSection";
-import Contact from "./components/contact/contact";
-import Navbar from "./components/navBar/navBar";
-import ProjectsSection from "./components/projects/projectSection";
+import About from "../components/About";
+import Skills from "../components/skills/Skills";
+import TestimonialsSection from "../components/testimonials/TestimonialsSection";
+import Contact from "../components/contact/Contact";
+import Navbar from "../components/NavBar";
+import ProjectsSection from "../components/projects/ProjectSection";
+
 
 export default function App() {
+  
   return (
     <main>
       <Navbar />
