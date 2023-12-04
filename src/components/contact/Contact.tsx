@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Map from "./map";
+import Map from "./Map";
 import CustomLink from "../CustomLink";
 
 const Contact: FC = () => {
@@ -20,6 +20,7 @@ const Contact: FC = () => {
               href="mailto:slawomirdyk@gmail.com"
               text="Send Email"
               textColor="black"
+              additionalClasses="hover:bg-sky-700"
             />
           </div>
           <div className="relative mb-2">
@@ -27,6 +28,7 @@ const Contact: FC = () => {
               href="https://www.linkedin.com/in/slawomir-dyk-b35ab1177/"
               text="Send me a message by LinkedIn"
               textColor="black"
+              additionalClasses="hover:bg-sky-700"
             />
           </div>
           <div className="relative mb-4">My Phone Number: 07562760261</div>
