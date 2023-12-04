@@ -56,7 +56,7 @@ export const projects: ProjectData[] = [
     image: "/portfolio.gif",
     link: "",
     code: "https://github.com/Slav666/my-portfolio-web/pull/1",
-    liveApp: "LiveApp",
+     liveApp: "LiveApp",
     technologies: ["/logoReact.png", "next-icon.svg", "/tailwindcss.svg"],
   },
 ];
