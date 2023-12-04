@@ -55,7 +55,7 @@ export const projects: ProjectData[] = [
       "This portfolio website comprises six main sections: a navigation bar, details about myself, a list of projects I have previously worked on, a compilation of the technologies I have experience with, testimonials, and contact information. The primary objective of developing this application was to enhance my knowledge of Tailwind CSS.",
     image: "/portfolio.gif",
     link: "",
-    code: "code",
+    code: "https://github.com/Slav666/my-portfolio-web/pull/1",
     liveApp: "LiveApp",
     technologies: ["/logoReact.png", "next-icon.svg", "/tailwindcss.svg"],
   },
