@@ -1,13 +1,11 @@
 import { ReactNode } from "react";
-import { SyntheticEvent } from "react";
 
 export interface ProjectData {
   title: string;
   description: string;
   image: string;
-  link: string;
   code: string;
-  liveApp: string;
+  liveApp?: string;
   technologies: string[];
 }
 
@@ -39,15 +37,6 @@ export interface TestimonialCardProps {
 export interface TestimonialsListProps {
   testimonials: TestimonialData[];
 }
-
-// export interface ButtonProps {
-//   label: string;
-//   type?: "submit" | undefined;
-//   onClick?: (event: SyntheticEvent) => void;
-//   disableHover?: boolean;
-//   disabled?: boolean;
-//   className?: string;
-// }
 
 export interface SkillWrapperProps {
   title: string;

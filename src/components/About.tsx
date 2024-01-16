@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Image from "next/image";
 import CustomLink from "./CustomLink";
 import { infoData } from "../constants";
 import CircleImage from "./CircleImage";
@@ -20,7 +19,7 @@ const About: FC = () => {
             <CustomLink
               href="#projects"
               text="See My Past Work"
-              bgColor="bg-gray-800"
+              bgColor="bg-gray-600"
               textColor="hover:bg-gray-700 hover:text-white"
             />
           </div>
