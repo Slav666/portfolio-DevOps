@@ -2,11 +2,24 @@ import { ProjectData, TestimonialData, Skills } from "../types";
 
 export const projects: ProjectData[] = [
   {
+    title: "Data Visualisation Dashboard",
+    description:
+      "This is an example of one more advanced feature which I and my team did at Astrosat. The original feature was not written in typescript but I rewrote all code using typescript. Users can add their own data for 'target' values, which are then either conditionally rendered as additional graphs in some charts or used to calculate percentages from the API data in others. All user interactions are tracked at all times and automatically persisted to the database (mocked here) whenever the user navigates away from the dashboard or closes the tab/browser.",
+    image: "/victory-dashboard.gif",
+    code: "https://github.com/Slav666/dashboard-app",
+    technologies: [
+      "/logoReact.png",
+      "/victory-icon.svg",
+      "/typescript.svg",
+      "/msw-icon.svg",
+      "/material-ui-1.svg",
+    ],
+  },
+  {
     title: "Cars App",
     description:
-      "The objective of this project was to deepen my knowledge of Next.js by implementing advanced features. I focused on developing a robust search functionality, incorporating versatile filtering capabilities. Notably, I created custom filter components, including comboboxes and modals, to enhance user interaction. Emphasis was placed on maintaining a well-organized file and folder structure for a scalable and maintainable codebase",
+      "In this project, my primary goal was to elevate my proficiency in Next.js by delving into the implementation of advanced features. The focal point of my efforts revolved around crafting a sophisticated search functionality, seamlessly integrating versatile filtering capabilities into the system. One of the notable achievements in this pursuit was the development of custom filter components, such as comboboxes and modals, to augment user interaction and provide a more intuitive and refined user experience.",
     image: "/car-app.gif",
-    link: "https://cars-app-eight.vercel.app/",
     code: "https://github.com/Slav666/cars-app",
     liveApp: "https://cars-app-eight.vercel.app/",
     technologies: [
@@ -22,7 +35,6 @@ export const projects: ProjectData[] = [
     description:
       "This application incorporates a user account system seamlessly integrated with Auth0. Upon logging in, users encounter a user interface strikingly similar to the original ChatGPT, where they can access a list of previous chats and initiate new conversations. In the central part of the application, users can pose questions and receive responses from OpenAI, with all information stored using MongoDB.",
     image: "/chat-gpt.gif",
-    link: "https://chat-gpt-clone-three-nu.vercel.app/",
     code: "https://github.com/Slav666/Chat-gpt-clone",
     liveApp: "https://chat-gpt-clone-three-nu.vercel.app/",
     technologies: [
@@ -34,11 +46,10 @@ export const projects: ProjectData[] = [
     ],
   },
   {
-    title: "Book shelf App",
+    title: "Bookshelf App",
     description:
       "This app serves as a straightforward bookshelf application, allowing users to register, log in, search for books, add them to their reading list, and subsequently move them to the 'read books' shelf or remove them altogether. The primary goal of developing this app was to acquire proficiency in React Query and explore its integration within a new Astrosat project.",
     image: "/book-shelf-app.gif",
-    link: "",
     code: "https://github.com/Slav666/Bookshelf-app",
     liveApp: "",
     technologies: [
@@ -50,13 +61,11 @@ export const projects: ProjectData[] = [
     ],
   },
   {
-    title: "This portfolio website",
+    title: "This Portfolio Website",
     description:
       "This portfolio website comprises six main sections: a navigation bar, details about myself, a list of projects I have previously worked on, a compilation of the technologies I have experience with, testimonials, and contact information. The primary objective of developing this application was to enhance my knowledge of Tailwind CSS.",
     image: "/portfolio.gif",
-    link: "",
     code: "https://github.com/Slav666/my-portfolio-web/pull/1",
-     liveApp: "LiveApp",
     technologies: ["/logoReact.png", "next-icon.svg", "/tailwindcss.svg"],
   },
 ];
