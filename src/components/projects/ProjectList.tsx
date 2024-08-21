@@ -8,7 +8,7 @@ interface ProjectsListProps {
 
 const ProjectsList: FC<ProjectsListProps> = ({ projects }) => {
   return (
-    <div className="flex flex-wrap -m-2">
+    <div className="flex flex-col justify-center items-center m-16 p-16">
       {projects.map((project) => (
         <ProjectCard key={project.title} project={project} />
       ))}

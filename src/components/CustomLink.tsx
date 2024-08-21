@@ -9,7 +9,7 @@ const CustomLink: FC<CustomLinkProps> = ({
   textColor,
   additionalClasses,
 }) => {
-  const classes = `inline-flex border-0 py-2 mr-2 focus:outline-none rounded text-lg ${bgColor} ${textColor} ${
+  const classes = `inline-flex border-0 p-2 mr-2 focus:outline-none rounded text-lg ${bgColor} ${textColor} ${
     additionalClasses || ""
   }`;
 
