@@ -2,48 +2,31 @@ import { ProjectData, TestimonialData, Skills } from "../types";
 
 export const projects: ProjectData[] = [
   {
-    title: "Data Visualisation Dashboard",
+    title: "Issue Tracker",
     description:
-      "This is an example of one more advanced feature which I and my team did at Astrosat. The original feature was not written in typescript but I rewrote all code using typescript. Users can add their own data for 'target' values, which are then either conditionally rendered as additional graphs in some charts or used to calculate percentages from the API data in others. All user interactions are tracked at all times and automatically persisted to the database (mocked here) whenever the user navigates away from the dashboard or closes the tab/browser.",
-    image: "/victory-dashboard.gif",
-    code: "https://github.com/Slav666/dashboard-app",
+      "This project is a full-stack, production-grade issue-tracking application designed for managing and visualizing project issues efficiently. Key features include a comprehensive dashboard with charts, advanced filtering, sorting, and pagination options. The application supports secure user authentication, intuitive forms with validation, and full CRUD functionality, allowing seamless issue management. It connects to a MySQL database to ensure robust data handling and persistence. With a user-friendly interface and powerful backend, this issue tracker is tailored to streamline project workflows and enhance team collaboration.",
+    image: "/issue-tracker.gif",
+    code: "https://github.com/Slav666/issue-tracker",
+    liveApp: "https://issue-tracker-henna-kappa.vercel.app/",
     technologies: [
       "/logoReact.png",
-      "/victory-icon.svg",
       "/typescript.svg",
-      "/msw-icon.svg",
-      "/material-ui-1.svg",
+      "/tailwindcss.svg",
+      "/vercel.svg",
+      "mysql-horizontal.svg",
+      "prisma-2.svg",
+      "radix-ui.svg",
     ],
   },
+
   {
-    title: "Cars App",
+    title: "Snake Game",
     description:
-      "In this project, my primary goal was to elevate my proficiency in Next.js by delving into the implementation of advanced features. The focal point of my efforts revolved around crafting a sophisticated search functionality, seamlessly integrating versatile filtering capabilities into the system. One of the notable achievements in this pursuit was the development of custom filter components, such as comboboxes and modals, to augment user interaction and provide a more intuitive and refined user experience.",
-    image: "/car-app.gif",
-    code: "https://github.com/Slav666/cars-app",
-    liveApp: "https://cars-app-eight.vercel.app/",
-    technologies: [
-      "/tailwindcss.svg",
-      "/typescript.svg",
-      "/logoReact.png",
-      "/next-icon.svg",
-      "/headlessui.svg",
-    ],
-  },
-  {
-    title: "Chat GPT - clone",
-    description:
-      "This application incorporates a user account system seamlessly integrated with Auth0. Upon logging in, users encounter a user interface strikingly similar to the original ChatGPT, where they can access a list of previous chats and initiate new conversations. In the central part of the application, users can pose questions and receive responses from OpenAI, with all information stored using MongoDB.",
-    image: "/chat-gpt.gif",
-    code: "https://github.com/Slav666/Chat-gpt-clone",
-    liveApp: "https://chat-gpt-clone-three-nu.vercel.app/",
-    technologies: [
-      "/next-icon.svg",
-      "/mongodb.svg",
-      "/auth0.svg",
-      "/tailwindcss.svg",
-      "/logoReact.png",
-    ],
+      "This is a re-creation of the classic Nokia game Snake II. I created this mostly as an exercise in functional programming and custom React hooks, but also for fun. The game includes all of the features of the original, such as: Wrapping when hitting walls or floor/ceiling, the snake's body growing each time he eats a gecko, the snake getting faster each time he eats a gecko, the snake's head turning to face the direction he is moving prevention of turning 180 degrees and a look-ahead hint of where the next gecko will appear",
+    image: "/snake-game.gif",
+    code: "https://github.com/Slav666/snake-game",
+    liveApp: "https://snake-game-five-teal.vercel.app/",
+    technologies: ["/logoReact.png", "/typescript.svg", "/sass-1.svg"],
   },
   {
     title: "Bookshelf App",
@@ -51,7 +34,6 @@ export const projects: ProjectData[] = [
       "This app serves as a straightforward bookshelf application, allowing users to register, log in, search for books, add them to their reading list, and subsequently move them to the 'read books' shelf or remove them altogether. The primary goal of developing this app was to acquire proficiency in React Query and explore its integration within a new Astrosat project.",
     image: "/book-shelf-app.gif",
     code: "https://github.com/Slav666/Bookshelf-app",
-    liveApp: "",
     technologies: [
       "/msw-icon.svg",
       "/tailwindcss.svg",
