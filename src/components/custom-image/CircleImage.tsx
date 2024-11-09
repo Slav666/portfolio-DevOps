@@ -3,7 +3,7 @@ import { CircleImageProps } from "@/types";
 
 const CircleImage = ({ src, alt }: CircleImageProps) => (
   <div className="flex justify-center items-center px-10 cursor-pointer">
-    <div className="border-6 border-white rounded-full max-w-[30em] max-h-[30em] overflow-hidden">
+    <div className="border-6 border-white rounded-full max-w-[20em] max-h-[20em] overflow-hidden">
       <Image
         alt={alt}
         src={src}

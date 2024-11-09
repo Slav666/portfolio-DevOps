@@ -1,28 +1,30 @@
 import { ChipIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { FC } from "react";
 import { skills, skillsCodeClan } from "../../constants";
 import SkillList from "./SkillList";
-import SkillWrapper from "./SkillWrapper";
+import { Title } from "../composite-components/composite-components";
+import { ContentArea } from "../composite-components/composite-components";
 
-const Skills = () => {
+const Skills: FC = () => {
   return (
-    <section id="skills">
-      <div className="container px-5 py-10 mx-auto">
-        <SkillWrapper
-          title="Skills & Technologies"
-          description="List of the main technologies I used while working at Astrosat."
-        >
-          <ChipIcon className="w-10 inline-block mb-4" />
-        </SkillWrapper>
+    <div id="skills">
+      <ContentArea>
+        <Title
+          icon={<ChipIcon className="text-blue-500" />}
+          title="List of the main technologies I used while working at Astrosat."
+          iconSize="w-12 h-12"
+          titleSize={{ sm: "text-2xl", lg: "text-4xl" }}
+        />
         <SkillList skills={skills} />
-
-        <SkillWrapper
-          title="Skills & Technologies (Code Clan)"
-          description="List of the extra technologies I used while learning at Code Clan."
+        <Title
+          icon={<ChipIcon className="text-blue-500" />}
+          title="List of the extra technologies I used while learning at Code Clan."
+          iconSize="w-12 h-12"
+          titleSize={{ sm: "text-2xl", lg: "text-4xl" }}
         />
         <SkillList skills={skillsCodeClan} />
-      </div>
-    </section>
+      </ContentArea>
+    </div>
   );
 };
 
