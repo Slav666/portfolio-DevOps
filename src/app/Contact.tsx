@@ -13,7 +13,7 @@ const Contact: FC = () => {
     <div>
       <SectionWrapper>
         <div
-          className="bg-gray-300 gap-4 flex-col text-center m-4 p-8 rounded-xl"
+          className="bg-gray-300 gap-4 flex-col text-center m-12 p-8 rounded-xl"
           id="contact"
         >
           <Title title="How to contact me?" />

@@ -4,7 +4,7 @@ import TestimonialsSection from "../components/testimonials/TestimonialsSection"
 import Contact from "./Contact";
 import Navbar from "./NavBar";
 import ProjectsSection from "../components/projects/ProjectSection";
-import { testimonials } from "@/constants";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -15,6 +15,7 @@ export default function App() {
       <Skills />
       <TestimonialsSection />
       <Contact />
+      <Footer />
     </main>
   );
 }
