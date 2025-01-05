@@ -48,6 +48,15 @@ export const projects: ProjectData[] = [
     ],
   },
   {
+    title: "Snake Game",
+    description:
+      "This is a re-creation of the classic Nokia game Snake II. I created this mostly as an exercise in functional programming and custom React hooks, but also for fun. The game includes all of the features of the original, such as: Wrapping when hitting walls or floor/ceiling, the snake's body growing each time he eats a gecko, the snake getting faster each time he eats a gecko, the snake's head turning to face the direction he is moving prevention of turning 180 degrees and a look-ahead hint of where the next gecko will appear",
+    image: "/snake-game.gif",
+    code: "https://github.com/Slav666/snake-game",
+    liveApp: "https://snake-game-five-teal.vercel.app/",
+    technologies: ["/logoReact.png", "/typescript.svg", "/sass-1.svg"],
+  },
+  {
     title: "This Portfolio Website",
     description:
       "This portfolio website comprises six main sections: a navigation bar, details about myself, a list of projects I have previously worked on, a compilation of the technologies I have experience with, testimonials, and contact information. The primary objective of developing this application was to enhance my knowledge of Tailwind CSS.",
