@@ -5,7 +5,7 @@ export const projects: ProjectData[] = [
     title:
       "DevOps: Full-Stack Web App Deployment on AWS ECS with Docker & MongoDB Atlas",
     description:
-      "I am currently working on deploying a full-stack web application using AWS ECS with a React frontend, Node.js backend, and MongoDB Atlas database. The application is fully dockerized and designed for scalability, reliability, and high availability in the cloud.",
+      "I am currently developing and deploying a full-stack web application on AWS using Elastic Container Service (ECS). The application consists of a React-based frontend and a Node.js backend, both running in Docker containers. The backend is connected to MongoDB Atlas, ensuring a managed and scalable database solution. To enhance performance and reliability, the frontend and backend communicate through an Application Load Balancer, which efficiently distributes traffic and ensures high availability. By leveraging AWS ECS, the application is designed for seamless scalability, resilience, and cloud-native deployment.",
     code: "https://hub.docker.com/repository/docker/slav666/react-node-mongodb-app/general",
     liveApp: "",
     technologies: [
@@ -18,20 +18,35 @@ export const projects: ProjectData[] = [
     image: "/aws-architecture.png",
   },
   {
-    title: "DevOps: Automated Next.js Deployment to Vercel with GitHub Actions",
+    title: "DevOps/Frontend: This Portfolio Website",
     description:
-      "This project automates the deployment of a Next.js application to Vercel using GitHub Actions. The workflow triggers on pushes to the main branch, automatically deploying the app to Vercel's production environment. It uses Vercel CLI and securely stores the Vercel token in GitHub Secrets. Features: Automated deployment: Deploys the app to Vercel whenever changes are pushed to the main branch. Security: The Vercel token is securely stored in GitHub Secrets. Transparency: Monitor deployment status directly from the GitHub Actions interface.",
-    code: "https://github.com/Slav666/Next-starter/tree/main/.github/workflows",
-    liveApp: "",
+      "This portfolio website consists of six main sections: a navigation bar, an introduction about myself, a showcase of my past projects, a collection of technologies I have experience with, testimonials, and contact information.The primary goal of developing this application was to deepen my understanding of AWS S3 and GitHub Actions. Since the website is static, it is hosted on an S3 bucket, ensuring a cost-effective and scalable deployment. Additionally, GitHub Actions automates the deployment process by seamlessly updating the live version whenever new code is pushed to the main branch. In the future, I plan to enhance the site's security by addressing the 'Not Secure' warning, ensuring a fully secure browsing experience.",
+    image: "/portfolio.gif",
+    code: "https://github.com/Slav666/portfolio-DevOps",
     technologies: [
-      "/logoReact.png",
-      "/typescript.svg",
-      "/tailwindcss.svg",
-      "/vercel.svg",
+      "/aws.png",
+      "/s3-bucket.jpeg",
       "/git-actions.png",
+      "/logoReact.png",
+      "next-icon.svg",
+      "/tailwindcss.svg",
     ],
-    image: "/git-actions.png",
   },
+  // {
+  //   title: "DevOps: Automated Next.js Deployment to Vercel with GitHub Actions",
+  //   description:
+  //     "This project automates the deployment of a Next.js application to Vercel using GitHub Actions. The workflow triggers on pushes to the main branch, automatically deploying the app to Vercel's production environment. It uses Vercel CLI and securely stores the Vercel token in GitHub Secrets. Features: Automated deployment: Deploys the app to Vercel whenever changes are pushed to the main branch. Security: The Vercel token is securely stored in GitHub Secrets. Transparency: Monitor deployment status directly from the GitHub Actions interface.",
+  //   code: "https://github.com/Slav666/Next-starter/tree/main/.github/workflows",
+  //   liveApp: "",
+  //   technologies: [
+  //     "/logoReact.png",
+  //     "/typescript.svg",
+  //     "/tailwindcss.svg",
+  //     "/vercel.svg",
+  //     "/git-actions.png",
+  //   ],
+  //   image: "/git-actions.png",
+  // },
   {
     title: "DevOps: Full-Stack MERN App with Docker & Docker Compose",
     description:
@@ -46,20 +61,6 @@ export const projects: ProjectData[] = [
     ],
     image: "/docker-compose.png",
   },
-  {
-    title: "Frontend/DevOps: This Portfolio Website",
-    description:
-      "This portfolio website comprises six main sections: a navigation bar, details about myself, a list of projects I have previously worked on, a compilation of the technologies I have experience with, testimonials, and contact information. The primary objective of developing this application was to enhance my knowledge of Tailwind CSS.",
-    image: "/portfolio.gif",
-    code: "https://github.com/Slav666/my-portfolio-web/pull/1",
-    technologies: [
-      "/logoReact.png",
-      "next-icon.svg",
-      "/tailwindcss.svg",
-      "/s3-bucket.jpeg",
-    ],
-  },
-
   {
     title: "Full-Stack: Issue Tracker",
     description:
@@ -142,4 +143,4 @@ export const devSkills: Skills[] = [
 ];
 
 export const infoData: string =
-  "Hello, I’m Slawomir, a DevOps and Cloud Engineer with a background in front-end development and GIS, currently based in Musselburgh, Scotland. With five years of experience in software development, I spent three and a half years at Astrosat, an innovative aerospace company, where I specialized in visualizing satellite data in mapping applications and developing custom tools to enhance data interaction. Over the past year, I’ve transitioned into DevOps and Cloud Engineering, gaining hands-on experience with AWS, containerization (Docker, Kubernetes), and CI/CD pipelines (GitHub Actions, GitLab CI/CD) to automate and streamline deployments.I’m passionate about cloud infrastructure, automation, and improving system reliability and currently expanding my expertise in Terraform and Ansible to further enhance my DevOps skill set.On this page, you’ll find concise summaries of my projects, showcasing my ability to bridge development and operations through automation, cloud solutions, and scalable architectures.Let’s connect—I’m open to opportunities where I can grow and contribute as a DevOps/Cloud Engineer!!";
+  "Hello, I’m Slawomir, a DevOps and Cloud Engineer with a background in front-end development and GIS, currently based in Musselburgh, Scotland. With five years of experience in software development, I spent three and a half years at Astrosat, an innovative aerospace company, where I specialized in visualizing satellite data in mapping applications and developing custom tools to enhance data interaction. Over the past year, I’ve transitioned into DevOps and Cloud Engineering, gaining hands-on experience with AWS, containerization (Docker, Kubernetes), and CI/CD pipelines (GitHub Actions, GitLab CI/CD) to automate and streamline deployments.I’m passionate about cloud infrastructure, automation, and improving system reliability and currently expanding my expertise in Terraform and Ansible to further enhance my DevOps skill set.On this page, you’ll find concise summaries of my projects, showcasing my ability to bridge development and operations through automation, cloud solutions, and scalable architectures.Let’s connect—I’m open to opportunities where I can grow and contribute as a DevOps/Cloud Engineer.";

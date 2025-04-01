@@ -22,7 +22,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
       <ExternalLink label="Code" href={project.code} />
       {liveAppHref && <ExternalLink label="Live app" href={liveAppHref} />}
 
-      <DescriptionSection className="max-w-screen-md mx-auto p-6 sm:p-8 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+      <DescriptionSection className="max-w-screen-md mx-auto p-6 sm:p-8 bg-gray-300 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
         <p className="text-lg text-gray-700 leading-relaxed">
           {project.description}
         </p>
