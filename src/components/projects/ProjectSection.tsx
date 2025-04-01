@@ -11,7 +11,7 @@ const ProjectsSection: FC = () => {
       <ContentArea>
         <Title
           icon={<CodeIcon className="text-blue-500" />}
-          title="Apps I Have Built"
+          title="My Projects"
           iconSize="w-12 h-12"
           titleSize={{ sm: "text-2xl", lg: "text-3xl" }}
         />

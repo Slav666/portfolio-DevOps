@@ -1,5 +1,4 @@
 import { SyntheticEvent } from "react";
-
 import clsx from "clsx";
 
 interface Props {
@@ -24,11 +23,11 @@ const Button = ({
     onClick={onClick}
     disabled={disabled}
     className={clsx(
-      `border-solid rounded-md bg-blue p-2 text-blue-600 text-sm lg:text-lg font-bold ${
+      `border-solid rounded-md bg-white p-2 m-4 text-blue-600 text-sm lg:text-lg font-bold ${
         !disableHover && !disabled
-          ? "hover:bg-white transform active:scale-x-75 transition-transform"
+          ? "hover:bg-gray-300 active:bg-gray-400 transition-all duration-200"
           : ""
-      } ${disabled ? "cursor-not-allowed" : ""}`,
+      } ${disabled ? "cursor-not-allowed opacity-50" : ""}`,
       className
     )}
   >

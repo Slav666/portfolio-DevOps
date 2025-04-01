@@ -2,7 +2,66 @@ import { ProjectData, TestimonialData, Skills } from "../types";
 
 export const projects: ProjectData[] = [
   {
-    title: "Issue Tracker",
+    title:
+      "DevOps: Full-Stack Web App Deployment on AWS ECS with Docker & MongoDB Atlas",
+    description:
+      "I am currently working on deploying a full-stack web application using AWS ECS with a React frontend, Node.js backend, and MongoDB Atlas database. The application is fully dockerized and designed for scalability, reliability, and high availability in the cloud.",
+    code: "https://hub.docker.com/repository/docker/slav666/react-node-mongodb-app/general",
+    liveApp: "",
+    technologies: [
+      "/aws.png",
+      "/docker.png",
+      "/logoReact.png",
+      "/mongodb.svg",
+      "/nodejs-icon.svg",
+    ],
+    image: "/aws-architecture.png",
+  },
+  {
+    title: "DevOps: Automated Next.js Deployment to Vercel with GitHub Actions",
+    description:
+      "This project automates the deployment of a Next.js application to Vercel using GitHub Actions. The workflow triggers on pushes to the main branch, automatically deploying the app to Vercel's production environment. It uses Vercel CLI and securely stores the Vercel token in GitHub Secrets. Features: Automated deployment: Deploys the app to Vercel whenever changes are pushed to the main branch. Security: The Vercel token is securely stored in GitHub Secrets. Transparency: Monitor deployment status directly from the GitHub Actions interface.",
+    code: "https://github.com/Slav666/Next-starter/tree/main/.github/workflows",
+    liveApp: "",
+    technologies: [
+      "/logoReact.png",
+      "/typescript.svg",
+      "/tailwindcss.svg",
+      "/vercel.svg",
+      "/git-actions.png",
+    ],
+    image: "/git-actions.png",
+  },
+  {
+    title: "DevOps: Full-Stack MERN App with Docker & Docker Compose",
+    description:
+      "This is a full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js) and fully containerized using Docker and Docker Compose for seamless deployment and scalability. The project follows a microservices-friendly architecture, making it easy to set up, run, and deploy across different environments.",
+    code: "https://github.com/Slav666/docker-compose-app",
+    liveApp: "",
+    technologies: [
+      "/docker.png",
+      "/logoReact.png",
+      "/nodejs-icon.svg",
+      "/mongodb.svg",
+    ],
+    image: "/docker-compose.png",
+  },
+  {
+    title: "Frontend/DevOps: This Portfolio Website",
+    description:
+      "This portfolio website comprises six main sections: a navigation bar, details about myself, a list of projects I have previously worked on, a compilation of the technologies I have experience with, testimonials, and contact information. The primary objective of developing this application was to enhance my knowledge of Tailwind CSS.",
+    image: "/portfolio.gif",
+    code: "https://github.com/Slav666/my-portfolio-web/pull/1",
+    technologies: [
+      "/logoReact.png",
+      "next-icon.svg",
+      "/tailwindcss.svg",
+      "/s3-bucket.jpeg",
+    ],
+  },
+
+  {
+    title: "Full-Stack: Issue Tracker",
     description:
       "This project is a full-stack, production-grade issue-tracking application designed for managing and visualizing project issues efficiently. Key features include a comprehensive dashboard with charts, advanced filtering, sorting, and pagination options. The application supports secure user authentication, intuitive forms with validation, and full CRUD functionality, allowing seamless issue management. It connects to a MySQL database to ensure robust data handling and persistence. With a user-friendly interface and powerful backend, this issue tracker is tailored to streamline project workflows and enhance team collaboration.",
     image: "/issue-tracker.gif",
@@ -17,52 +76,6 @@ export const projects: ProjectData[] = [
       "prisma-2.svg",
       "radix-ui.svg",
     ],
-  },
-  {
-    title: "Vue Jobs app",
-    description:
-      "This project was my introduction to Vue.js, where I focused on mastering the framework's fundamentals, including components, directives, lifecycle methods, and event handling.The application serves as a job management system, allowing users to: Add new jobs to the list, Update existing job details, Delete jobs from the list.A mock backend is implemented using JSON-Server, enabling seamless data handling and CRUD operations. Through this project, I strengthened my understanding of Vue.js core concepts and gained hands-on experience building a functional, user-friendly application.",
-    image: "/vue-jobs.gif",
-    code: "https://github.com/Slav666/issue-tracker",
-    // liveApp: "https://issue-tracker-henna-kappa.vercel.app/",
-    technologies: [
-      "/logoReact.png",
-      "/typescript.svg",
-      "/tailwindcss.svg",
-      "vuejs-icon.svg",
-    ],
-  },
-
-  {
-    title: "Bookshelf App",
-    description:
-      "This app serves as a straightforward bookshelf application, allowing users to register, log in, search for books, add them to their reading list, and subsequently move them to the 'read books' shelf or remove them altogether. The primary goal of developing this app was to acquire proficiency in React Query and explore its integration within a new Astrosat project.",
-    image: "/book-shelf-app.gif",
-    code: "https://github.com/Slav666/Bookshelf-app",
-    technologies: [
-      "/msw-icon.svg",
-      "/tailwindcss.svg",
-      "/logoReact.png",
-      "/form.svg",
-      "/react-query.svg",
-    ],
-  },
-  {
-    title: "Snake Game",
-    description:
-      "This is a re-creation of the classic Nokia game Snake II. I created this mostly as an exercise in functional programming and custom React hooks, but also for fun. The game includes all of the features of the original, such as: Wrapping when hitting walls or floor/ceiling, the snake's body growing each time he eats a gecko, the snake getting faster each time he eats a gecko, the snake's head turning to face the direction he is moving prevention of turning 180 degrees and a look-ahead hint of where the next gecko will appear",
-    image: "/snake-game.gif",
-    code: "https://github.com/Slav666/snake-game",
-    liveApp: "https://snake-game-five-teal.vercel.app/",
-    technologies: ["/logoReact.png", "/typescript.svg", "/sass-1.svg"],
-  },
-  {
-    title: "This Portfolio Website",
-    description:
-      "This portfolio website comprises six main sections: a navigation bar, details about myself, a list of projects I have previously worked on, a compilation of the technologies I have experience with, testimonials, and contact information. The primary objective of developing this application was to enhance my knowledge of Tailwind CSS.",
-    image: "/portfolio.gif",
-    code: "https://github.com/Slav666/my-portfolio-web/pull/1",
-    technologies: ["/logoReact.png", "next-icon.svg", "/tailwindcss.svg"],
   },
 ];
 
@@ -117,5 +130,16 @@ export const skillsCodeClan: Skills[] = [
   { icon: "/sql-database-icon.svg", tech: "SQL - Data Base" },
 ];
 
+export const devSkills: Skills[] = [
+  { icon: "/linux.jpeg", tech: "Linux - Ubuntu" },
+  { icon: "/bash.png", tech: "Bash" },
+  { icon: "/docker.png", tech: "Docker" },
+  {
+    icon: "/aws.png",
+    tech: "AWS",
+  },
+  { icon: "/git-actions.png", tech: "GitHub Actions" },
+];
+
 export const infoData: string =
-  "Hello, I’m Slawomir a front-end developer with a focus on GIS, currently based in Musselburgh, Scotland. With four years of experience in software development, I spent three and a half years at Astrosat, an innovative aerospace company, where I specialized in visualizing satellite data in mapping applications and creating custom tools to enhance data interaction. Though my role at Astrosat ended over a year ago, the skills and experience I gained continue to shape my work.As you explore this page, you’ll find concise summaries of my projects, each with direct links to live deployments and repositories. These examples highlight not only my technical expertise but also my commitment to building impactful, hands-on solutions.";
+  "Hello, I’m Slawomir, a DevOps and Cloud Engineer with a background in front-end development and GIS, currently based in Musselburgh, Scotland. With five years of experience in software development, I spent three and a half years at Astrosat, an innovative aerospace company, where I specialized in visualizing satellite data in mapping applications and developing custom tools to enhance data interaction. Over the past year, I’ve transitioned into DevOps and Cloud Engineering, gaining hands-on experience with AWS, containerization (Docker, Kubernetes), and CI/CD pipelines (GitHub Actions, GitLab CI/CD) to automate and streamline deployments.I’m passionate about cloud infrastructure, automation, and improving system reliability and currently expanding my expertise in Terraform and Ansible to further enhance my DevOps skill set.On this page, you’ll find concise summaries of my projects, showcasing my ability to bridge development and operations through automation, cloud solutions, and scalable architectures.Let’s connect—I’m open to opportunities where I can grow and contribute as a DevOps/Cloud Engineer";

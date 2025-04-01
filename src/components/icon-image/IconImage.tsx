@@ -10,7 +10,7 @@ interface IconImageProps extends Omit<ImageProps, "width" | "height"> {
 const IconImage: FC<IconImageProps> = ({
   src,
   alt,
-  className = "w-8 h-8",
+  className = "w-12 h-12",
   ...props
 }) => {
   return (
