@@ -6,7 +6,7 @@ export const projects: ProjectData[] = [
       "DevOps: Full-Stack Web App Deployment on AWS ECS with Docker & MongoDB Atlas",
     description:
       "I am currently developing and deploying a full-stack web application on AWS using Elastic Container Service (ECS). The application consists of a React-based frontend and a Node.js backend, both running in Docker containers. The backend is connected to MongoDB Atlas, ensuring a managed and scalable database solution. To enhance performance and reliability, the frontend and backend communicate through an Application Load Balancer, which efficiently distributes traffic and ensures high availability. By leveraging AWS ECS, the application is designed for seamless scalability, resilience, and cloud-native deployment.",
-    code: "https://hub.docker.com/repository/docker/slav666/react-node-mongodb-app/general",
+    code: "https://github.com/Slav666/docker-compose-app",
     liveApp: "",
     technologies: [
       "/aws.png",
