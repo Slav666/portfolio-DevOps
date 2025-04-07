@@ -26,6 +26,9 @@ export const projects: ProjectData[] = [
     technologies: [
       "/aws.png",
       "/s3-bucket.jpeg",
+      "/route53.png",
+      "/CerMan.png",
+      "/aws-cloudfront.png",
       "/git-actions.png",
       "/logoReact.png",
       "next-icon.svg",
