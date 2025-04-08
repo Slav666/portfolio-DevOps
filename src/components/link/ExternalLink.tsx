@@ -9,7 +9,7 @@ interface Props {
 
 const ExternalLink = ({ href, label, className = "" }: Props) => (
   <a href={href} target="_blank" className={clsx("w-full", className)}>
-    <Button label={label} className="text-sm lg:text-lg" />
+    <Button label={label} className="text-sm lg:text-lg bg-yellow-400" />
   </a>
 );
 

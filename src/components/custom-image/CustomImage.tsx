@@ -14,7 +14,7 @@ const ResponsiveImage: FC<ResponsiveImageProps> = ({
   alt,
   width = 600,
   height = 400,
-  className = "w-full",
+  className = "w-full border-2 border-black rounded-3xl",
   ...props
 }) => {
   return (

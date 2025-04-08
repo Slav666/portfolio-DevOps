@@ -7,11 +7,11 @@ import { ContentArea } from "../composite-components/composite-components";
 
 const ProjectsSection: FC = () => {
   return (
-    <div id="projects">
+    <div id="projects" >
       <ContentArea>
         <Title
           icon={<CodeIcon className="text-blue-500" />}
-          title="My Projects"
+          title="MY PROJECTS"
           iconSize="w-12 h-12"
           titleSize={{ sm: "text-2xl", lg: "text-3xl" }}
         />

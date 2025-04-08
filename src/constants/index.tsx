@@ -2,8 +2,7 @@ import { ProjectData, TestimonialData, Skills } from "../types";
 
 export const projects: ProjectData[] = [
   {
-    title:
-      "DevOps: Full-Stack Web App Deployment on AWS ECS with Docker & MongoDB Atlas",
+    title: "FULL-STACK WEB APP DEPLOYMENT ON AWS WITH DOCKER & MONGODB ATLAS",
     description:
       "I am currently developing and deploying a full-stack web application on AWS using Elastic Container Service (ECS). The application consists of a React-based frontend and a Node.js backend, both running in Docker containers. The backend is connected to MongoDB Atlas, ensuring a managed and scalable database solution. To enhance performance and reliability, the frontend and backend communicate through an Application Load Balancer, which efficiently distributes traffic and ensures high availability. By leveraging AWS ECS, the application is designed for seamless scalability, resilience, and cloud-native deployment.",
     code: "https://github.com/Slav666/docker-compose-app",
@@ -15,13 +14,13 @@ export const projects: ProjectData[] = [
       "/mongodb.svg",
       "/nodejs-icon.svg",
     ],
-    image: "/aws-architecture.png",
+    image: "/doc-com-img.png",
   },
   {
-    title: "DevOps/Frontend: This Portfolio Website",
+    title: "THIS PORTFOLIO WEBSITE",
     description:
-      "This portfolio website consists of six main sections: a navigation bar, an introduction about myself, a showcase of my past projects, a collection of technologies I have experience with, testimonials, and contact information.The primary goal of developing this application was to deepen my understanding of AWS S3 and GitHub Actions. Since the website is static, it is hosted on an S3 bucket, ensuring a cost-effective and scalable deployment. Additionally, GitHub Actions automates the deployment process by seamlessly updating the live version whenever new code is pushed to the main branch. In the future, I plan to enhance the site's security by addressing the 'Not Secure' warning, ensuring a fully secure browsing experience.",
-    image: "/portfolio.gif",
+      "This portfolio website consists of six main sections: a navigation bar, an introduction about myself, a showcase of my past projects, a collection of technologies I have experience with, testimonials, and contact information. The primary goal of developing this application was to deepen my understanding of AWS S3 and GitHub Actions. Since the website is static, it is hosted on an S3 bucket, ensuring a cost-effective and scalable deployment. GitHub Actions automates the deployment process by seamlessly updating the live version whenever new code is pushed to the main branch. To provide a professional and secure experience, I’ve configured a custom domain purchased via GoDaddy, managed DNS settings with Route 53, and delivered the site using CloudFront for improved global performance. AWS Certificate Manager (ACM) was used to provision and attach an SSL certificate, ensuring encrypted HTTPS access. In the future, I plan to further enhance the website’s performance and add monitoring capabilities, while continuing to refine its design and accessibility.",
+    image: "/portimg.png",
     code: "https://github.com/Slav666/portfolio-DevOps",
     technologies: [
       "/aws.png",
@@ -51,9 +50,9 @@ export const projects: ProjectData[] = [
   //   image: "/git-actions.png",
   // },
   {
-    title: "DevOps: Full-Stack MERN App with Docker & Docker Compose",
+    title: "FULL-STACK MERN APP WITH DOCKER & DOCKER COMPOSE",
     description:
-      "This is a full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js) and fully containerized using Docker and Docker Compose for seamless deployment and scalability. The project follows a microservices-friendly architecture, making it easy to set up, run, and deploy across different environments.",
+      "This is a simple full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js) and fully containerized using Docker and Docker Compose for seamless deployment, scalability, and consistency across environments. The project follows a modular, microservices-friendly architecture, allowing for easy integration, maintenance, and future scaling. Each part of the stack runs in its own container, promoting isolation and reducing environment-related issues during development and deployment. This application is ideal for experimenting with DevOps practices, as it can be deployed locally, on cloud VMs, or orchestrated using ECS or Kubernetes. To run the project locally, please refer to the detailed instructions provided in the README file.",
     code: "https://github.com/Slav666/docker-compose-app",
     liveApp: "",
     technologies: [
@@ -62,15 +61,15 @@ export const projects: ProjectData[] = [
       "/nodejs-icon.svg",
       "/mongodb.svg",
     ],
-    image: "/docker-compose.png",
+    image: "/dcompose.png",
   },
   {
-    title: "Full-Stack: Issue Tracker",
+    title: "FULL STACK ISSUE TRACKER APP",
     description:
-      "This project is a full-stack, production-grade issue-tracking application designed for managing and visualizing project issues efficiently. Key features include a comprehensive dashboard with charts, advanced filtering, sorting, and pagination options. The application supports secure user authentication, intuitive forms with validation, and full CRUD functionality, allowing seamless issue management. It connects to a MySQL database to ensure robust data handling and persistence. With a user-friendly interface and powerful backend, this issue tracker is tailored to streamline project workflows and enhance team collaboration.",
+      "This project is a full-stack, production-grade issue-tracking application built with Next.js and Prisma, designed to demonstrate end-to-end web development capabilities. It features a dynamic dashboard with interactive charts, as well as advanced filtering, sorting, and pagination to efficiently manage and visualize project issues. The application includes secure authentication, intuitive and responsive forms with validation, and complete CRUD functionality for streamlined issue tracking. It connects to a MySQL database via Prisma ORM, enabling type-safe queries and robust data persistence. While the app is not cloud-deployed, it serves as a strong example of modern full-stack development, showcasing skills in UI design, data modeling, and API integration using a cutting-edge framework and tooling",
     image: "/issue-tracker.gif",
     code: "https://github.com/Slav666/issue-tracker",
-    liveApp: "https://issue-tracker-henna-kappa.vercel.app/",
+    // liveApp: "https://issue-tracker-henna-kappa.vercel.app/",
     technologies: [
       "/logoReact.png",
       "/typescript.svg",

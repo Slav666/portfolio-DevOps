@@ -8,10 +8,12 @@ interface SectionWrapperProps {
 export const SectionWrapper = ({
   isEven = false,
   children,
-}: SectionWrapperProps) => <li className="flex justify-center">{children}</li>;
+}: SectionWrapperProps) => (
+  <li className="flex justify-center bg-slate-500">{children}</li>
+);
 
 export const ContentArea = ({ children }: { children: ReactNode }) => (
-  <div className="bg-gray-400 min-h-screen flex flex-col justify-evenly gap-4 p-4 md:p-6 lg:p-8 text-center">
+  <div className="bg-slate-500 min-h-screen flex flex-col justify-evenly gap-4 p-4 md:p-6 lg:p-8 text-center">
     {children}
   </div>
 );
@@ -35,15 +37,15 @@ interface TitleProps {
   title: string;
   className?: string;
   iconSize?: string;
-  titleSize?: { sm: string; lg: string }; 
+  titleSize?: { sm: string; lg: string };
 }
 
 export const Title: FC<TitleProps> = ({
   icon,
   title,
   className = "",
-  iconSize = "w-10 h-10", 
-  titleSize = { sm: "text-3xl", lg: "text-4xl" },
+  iconSize = "w-10 h-10",
+  titleSize = { sm: "text-2xl", lg: "text-2xl" },
 }) => {
   return (
     <div className={`flex flex-col items-center ${className}`}>

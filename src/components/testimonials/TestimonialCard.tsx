@@ -8,7 +8,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({ testimonial }) => {
   const { quote, image, name, company } = testimonial;
 
   return (
-    <div className="p-4 md:w-1/2 w-full">
+    <div className="p-4 md:w-1/2 max-w-lg bg-slate-500 mx-auto">
       <div className="h-full bg-gray-300 bg-opacity-40 p-8 rounded-lg">
         <TerminalIcon className="w-8 h-8 text-gray-500 mb-4" />
         <blockquote className="leading-relaxed mb-6">

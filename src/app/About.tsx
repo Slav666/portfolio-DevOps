@@ -5,9 +5,9 @@ import { DisplayArea } from "../components/composite-components/composite-compon
 
 const About: FC = () => {
   return (
-    <section id="about">
+    <section id="about" className="bg-slate-400">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left text-lg mb-16 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-justify text-lg mb-16 md:mb-0 items-center">
           <p>{infoData}</p>
         </div>
         <DisplayArea>
