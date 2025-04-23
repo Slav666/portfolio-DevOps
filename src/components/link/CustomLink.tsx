@@ -11,5 +11,4 @@ const CustomLink: FC<CustomLinkProps> = ({ href, text, className = "" }) => {
     </Link>
   );
 };
-
 export default CustomLink;
