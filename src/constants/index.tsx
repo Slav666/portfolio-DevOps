@@ -24,6 +24,9 @@ export const projects: ProjectData[] = [
     code: "https://github.com/Slav666/portfolio-DevOps",
     technologies: [
       "/aws.png",
+      "/gateway.png",
+      "/lambda.png",
+      "/ses.png",
       "/s3-bucket.jpeg",
       "/route53.png",
       "/CerMan.png",
