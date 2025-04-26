@@ -56,7 +56,7 @@ const Navbar: FC = () => {
             />
           ))}
         </nav>
-        {/* <CustomLink
+        <CustomLink
           href="/contact"
           text={
             <>
@@ -65,7 +65,7 @@ const Navbar: FC = () => {
             </>
           }
           className={`bg-gray-200 hover:bg-gray-700 ${buttonStyle}`}
-        /> */}
+        />
       </div>
     </header>
   );
