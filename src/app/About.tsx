@@ -5,7 +5,7 @@ import { infoData } from "@/constants";
 
 const About = () => {
   return (
-    <div className="w-full  bg-[#222] text-white overflow-x-hidden">
+    <div className="w-full  bg-[#222] text-white overflow-x-hidden" id="about">
       <div className="max-w-screen-xl mx-auto px-5 py-8">
         <div className="flex flex-col md:flex-row items-center justify-around pt-12">
           <div className="w-72 h-72 rounded-full overflow-hidden border-[15px] border-[#444] shadow-xl">
