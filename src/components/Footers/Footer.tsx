@@ -32,7 +32,7 @@ import CustomLink from "../../components/link/CustomLink";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-500 text-gray-200 py-8">
+    <footer className="bg-[#222] text-gray-200 py-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Logo or Brand Name */}
         <div className="mb-4 md:mb-0 text-center md:text-left">
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-8 text-center text-sm text-black">
+      <div className="mt-8 text-center text-sm hover:text-gray-300 text-white">
         <p>© {new Date().getFullYear()} MyPortfolioWeb. All rights reserved.</p>
       </div>
     </footer>

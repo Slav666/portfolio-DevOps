@@ -38,7 +38,7 @@ const Navbar: FC = () => {
     "inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0";
 
   return (
-    <header className="bg-gray-500 md:sticky top-0 z-10">
+    <header className="bg-[#222] md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <CustomLink
           href="#about"
@@ -52,7 +52,7 @@ const Navbar: FC = () => {
               key={index}
               href={link.href}
               text={link.text}
-              className="hover:text-white"
+              className="text-white hover:text-gray-300"
             />
           ))}
         </nav>
