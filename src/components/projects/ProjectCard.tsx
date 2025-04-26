@@ -4,7 +4,6 @@ import { Title } from "../composite-components/composite-components";
 import IconImage from "../icon-image/IconImage";
 import CustomImage from "../custom-image/CustomImage";
 import { DescriptionSection } from "../composite-components/composite-components";
-import ExternalLink from "../link/ExternalLink";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 
 import CustomLink from "../../components/link/CustomLink";
@@ -20,17 +19,15 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <>
-      <Title title={project.title} />
       <div className="max-w-screen-lg mx-auto p-2 sm:p-2 m-4">
         <CustomImage src={project.image} alt="Project gallery" />
       </div>
-
-      <DescriptionSection className="max-w-screen-lg mx-auto my-2 p-6 sm:p-8 bg-slate-500  transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+      <Title title={project.title} />
+      <DescriptionSection className="max-w-screen-lg mx-auto my-2 p-6 sm:p-8  transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
         <p className="text-lg text-slate-100 leading-relaxed">
           {project.description}
         </p>
       </DescriptionSection>
-      {/* <ExternalLink label="Code" href={project.code} /> */}
       <CustomLink
         href={project.code}
         text={
@@ -56,7 +53,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
       <Title
         title="TECHNOLOGIES"
         titleSize={{ sm: "text-1xl", lg: "text-1xl" }}
-        className="m-3"
+        className="mt-6"
       />
       <div className="flex flex-wrap justify-center gap-2 p-2 max-w-screen-md m-auto">
         {project.technologies.map((icon, index) => (

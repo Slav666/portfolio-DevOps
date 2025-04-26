@@ -12,7 +12,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({ testimonial }) => {
       <div className="h-full bg-gray-300 bg-opacity-40 p-8 rounded-lg">
         <TerminalIcon className="w-8 h-8 text-gray-500 mb-4" />
         <blockquote className="leading-relaxed mb-6">
-          <p>{quote}</p>
+          <p className="text-justify">{quote}</p>
         </blockquote>
         <div className="flex items-center">
           <Image
@@ -24,7 +24,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({ testimonial }) => {
           />
           <div className="flex flex-col pl-4">
             <span className="title-font font-medium text-white">{name}</span>
-            <cite className="text-gray-500 text-sm uppercase">{company}</cite>
+            <cite className="text-blue-700 text-sm uppercase">{company}</cite>
           </div>
         </div>
       </div>
