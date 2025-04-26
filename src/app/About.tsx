@@ -26,18 +26,18 @@ const About = () => {
             <p className="text-gray-200 text-sm leading-relaxed">{infoData}</p>
 
             <div className="mt-8 space-x-3">
-              <a
+              {/* <a
                 href="#"
                 className="px-5 py-3 bg-[#333] border-2 border-blue-500 text-white rounded-full shadow-md"
               >
                 Download CV
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="/contact"
                 className="px-5 py-3 bg-[#333] border-2 border-gray-300 text-white rounded-full shadow-md"
               >
                 Contact
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
