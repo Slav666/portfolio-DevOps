@@ -1,6 +1,5 @@
 import { SyntheticEvent } from "react";
 import clsx from "clsx";
-
 interface Props {
   label: string;
   type?: "submit" | undefined;
