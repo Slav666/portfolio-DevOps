@@ -23,12 +23,12 @@ import { SiGnubash } from "react-icons/si";
 import { SiGithubactions } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 
-export const iconMap = {
-  FaAws,
-  FaNodeJs,
-  SiReact,
-  SiRedux,
-};
+// export const iconMap = {
+//   FaAws,
+//   FaNodeJs,
+//   SiReact,
+//   SiRedux,
+// };
 
 export const projects: ProjectData[] = [
   {
