@@ -13,7 +13,7 @@ export const SectionWrapper = ({
 );
 
 export const ContentArea = ({ children }: { children: ReactNode }) => (
-  <div className="bg-slate-500 min-h-screen flex flex-col justify-evenly gap-4 p-4 md:p-6 lg:p-8 text-center">
+  <div className="bg-[#222] min-h-screen flex flex-col justify-evenly gap-4 p-4 md:p-6 lg:p-8 text-center">
     {children}
   </div>
 );
@@ -49,9 +49,9 @@ export const Title: FC<TitleProps> = ({
 }) => {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      {icon && <div className={`${iconSize} mb-2`}>{icon}</div>}
+      {icon && <div className={`${iconSize} m-2`}>{icon}</div>}
       <h1
-        className={`${titleSize.sm} lg:${titleSize.lg} font-medium text-center`}
+        className={`${titleSize.sm} lg:${titleSize.lg} font-medium text-center text-white mb-6`}
       >
         {title}
       </h1>

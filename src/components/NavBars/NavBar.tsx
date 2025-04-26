@@ -13,7 +13,7 @@ const LandingPagNAvBar = () => {
       buttonHref="/contact"
       buttonContent={
         <>
-          Hire Me
+          Contact
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </>
       }

@@ -1,4 +1,34 @@
 import { ProjectData, TestimonialData, Skills } from "../types";
+import { TbBrandTypescript } from "react-icons/tb";
+import { SiMockserviceworker, SiReact } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io5";
+import { TbFileTypeHtml } from "react-icons/tb";
+import { TbBrandTailwind } from "react-icons/tb";
+import { SiStorybook } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { SiCypress } from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
+import { SiAmazonroute53 } from "react-icons/si";
+import { BsBucket } from "react-icons/bs";
+import { FaJava } from "react-icons/fa";
+import { FaGitSquare } from "react-icons/fa";
+import { GoRuby } from "react-icons/go";
+import { FaNode } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { FaLinux } from "react-icons/fa";
+import { SiGnubash } from "react-icons/si";
+import { SiGithubactions } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+
+export const iconMap = {
+  FaAws,
+  FaNodeJs,
+  SiReact,
+  SiRedux,
+};
 
 export const projects: ProjectData[] = [
   {
@@ -108,43 +138,41 @@ export const skills: Skills[] = [
   { icon: "/logo-javascript.svg", tech: "JavaScript" },
   { icon: "/logoReact.png", tech: "React" },
   { icon: "/css3-icon.svg", tech: "CSS3" },
-  { icon: "/material-ui-1.svg", tech: "Material UI" },
+  { icon: "/material-ui-1.svg", tech: "MaterialUI" },
   { icon: "/typescript.svg", tech: "Typescript" },
   { icon: "/python-3.svg", tech: "Python" },
   { icon: "/django.svg", tech: "Django" },
   { icon: "/storybook-icon.svg", tech: "StoryBook" },
-  { icon: "/jest-js-icon.svg", tech: "Unit Test" },
-  { icon: "/cucumber-icon.svg", tech: "End-to-End Tests" },
+  { icon: "/jest-js-icon.svg", tech: "Jest" },
+  { icon: "/cucumber-icon.svg", tech: "Cucumber" },
   { icon: "/victory-icon.svg", tech: "Victory" },
   { icon: "/git-icon.svg", tech: "Git" },
   { icon: "/github-icon.svg", tech: "Github" },
   { icon: "/redux-logo.svg", tech: "Redux" },
-  { icon: "/msw-icon.svg", tech: "Mock Service Worker" },
-  { icon: "/react-testing-library-icon.svg", tech: "React Testing Library" },
+  { icon: "/msw-icon.svg", tech: "MSW" },
+  { icon: "/react-testing-library-icon.svg", tech: "RTL" },
   { icon: "/html-icon.svg", tech: "HTML5" },
   { icon: "/netlify.svg", tech: "Netlify" },
-  { icon: "/gatsby-icon.svg", tech: "Gatsby" },
-  { icon: "/deck-gl-logo.png", tech: "DeckGL" },
 ];
 
 export const skillsCodeClan: Skills[] = [
   { icon: "/java-icon.svg", tech: "Java" },
   { icon: "/mocha-icon.svg", tech: "Mocha" },
-  { icon: "/nodejs-icon.svg", tech: "Node JS" },
+  { icon: "/nodejs-icon.svg", tech: "Node" },
   { icon: "/sinatra-icon.svg", tech: "Sinatra" },
   { icon: "/spring-icon.svg", tech: "Spring" },
-  { icon: "/sql-database-icon.svg", tech: "SQL - Data Base" },
+  { icon: "/sql-database-icon.svg", tech: "SQL" },
 ];
 
 export const devSkills: Skills[] = [
-  { icon: "/linux.jpeg", tech: "Linux - Ubuntu" },
+  { icon: "/linux.jpeg", tech: "Linux" },
   { icon: "/bash.png", tech: "Bash" },
   { icon: "/docker.png", tech: "Docker" },
   {
     icon: "/aws.png",
     tech: "AWS",
   },
-  { icon: "/git-actions.png", tech: "GitHub Actions" },
+  { icon: "/git-actions.png", tech: "G Actions" },
 ];
 
 export const infoData: string =

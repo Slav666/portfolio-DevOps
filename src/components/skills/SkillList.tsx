@@ -6,12 +6,15 @@ interface SkillProps {
 }
 
 const SkillList: FC<SkillProps> = ({ skills }) => (
-  <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+  <div className="flex flex-wrap gap-8 justify-center mx-8">
     {skills.map((skill) => (
-      <div key={skill.tech} className="p-2 sm:w-1/2 w-full">
-        <div className="bg-gray-800 rounded flex p-4 h-full items-center gap-4">
+      <div
+        key={skill.tech}
+        className="max-w-[200px] bg-black rounded-2xl shadow-md p-2 flex items-center justify-center transition-transform transform hover:scale-105 hover:shadow-xl border-2 border-yellow-300 gap-2"
+      >
+        <div className="bg-gray-700 rounded flex p-4 h-full items-center gap-4">
           <Image src={skill.icon} alt="icon" width={20} height={20} />
-          <span className="title-font font-medium text-white">
+          <span className="text-lg font-semibold text-gray-300">
             {skill.tech}
           </span>
         </div>

@@ -1,8 +1,7 @@
 import { FC } from "react";
 import Image, { ImageProps } from "next/image";
 
-interface ResponsiveImageProps
-  extends Omit<ImageProps, "width" | "height" | "layout"> {
+interface ResponsiveImageProps extends Omit<ImageProps, "width" | "height"> {
   src: string;
   alt: string;
   width?: number;
@@ -21,7 +20,7 @@ const ResponsiveImage: FC<ResponsiveImageProps> = ({
     <Image
       src={src}
       alt={alt}
-      layout="responsive"
+      // layout="responsive"
       width={width}
       height={height}
       className={className}

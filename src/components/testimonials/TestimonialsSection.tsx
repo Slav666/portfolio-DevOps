@@ -5,10 +5,10 @@ import { testimonials } from "../../constants";
 import TestimonialCard from "./TestimonialCard";
 
 const TestimonialsSection: FC = () => (
-  <div className=" mx-auto py-5 text-center bg-slate-500" id="testimonials">
+  <div className=" mx-auto py-5 text-center bg-[#222]" id="testimonials">
     <Title
       icon={<UsersIcon className="text-blue-500" />}
-      title="MY COLLEAGUES"
+      title="Testimonial"
       iconSize="w-12 h-12"
       titleSize={{ sm: "text-2xl", lg: "text-4xl" }}
     />

@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({
   copyrightName,
 }) => {
   return (
-    <footer className="bg-slate-800 text-gray-200 py-8">
+    <footer className="bg-[#222] text-gray-200 py-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mb-4 md:mb-0 text-slate-200">
           <CustomLink href={brandHref} text={brandText} />
