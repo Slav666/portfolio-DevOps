@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Logo or Brand Name */}
         <div className="mb-4 md:mb-0 text-center md:text-left">
-          <Link href="/" className="text-white text-2xl font-bold">
-            MyPortfolioWeb
-          </Link>
+          {/* <Link href="/" className="text-white text-2xl font-bold"> */}
+          MyPortfolioWeb
+          {/* </Link> */}
         </div>
 
         {/* Navigation Links */}
