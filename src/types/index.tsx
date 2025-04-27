@@ -24,11 +24,14 @@ export interface Skills {
 
 export interface CustomLinkProps {
   href: string;
+  children?: ReactNode;
+  target?: string;
+  rel?: string;
   bgColor?: string;
   textColor?: string;
   additionalClasses?: string | string[];
   className?: string;
-  text: React.ReactNode;
+  text: React.ReactNode | string | undefined;
 }
 
 export interface TestimonialCardProps {

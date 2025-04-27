@@ -1,26 +1,43 @@
-// import CustomNavBar from "../NavBars/customNavBar";
-// import { ArrowLeftIcon } from "@heroicons/react/solid";
-// const ContactPageNavBar = () => {
-//   return (
-//     <CustomNavBar
-//       brandHref="/"
-//       brandContent={
-//         <div className="bg-yellow-500 inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 ">
-//           <ArrowLeftIcon className="w-4 h-4 ml-1 text-black" />
-//           <p className="text-black">Portfolio</p>
-//         </div>
-//       }
-//       navLinks={[
-//         { href: "https://github.com/Slav666", text: "GitHub" },
-//         {
-//           href: "https://www.linkedin.com/in/slawomir-dyk-b35ab1177/",
-//           text: "Linkedin",
-//         },
-//       ]}
-//       showPhone
-//       phoneNumber="07562760261"
-//     />
-//   );
-// };
+import { ArrowLeftIcon } from "@heroicons/react/solid";
+import React, { FC } from "react";
+import CustomLink from "../../components/link/CustomLink";
+import { NavButtonStyle } from "../composite-components/composite-components";
 
-// export default ContactPageNavBar;
+const Navbar: FC = () => {
+  const navLinks = [
+    {
+      href: "https://www.linkedin.com/in/slawomir-dyk-b35ab1177/",
+      text: "LinkedIn ",
+    },
+    { href: "https://github.com/Slav666", text: "Github" },
+  ];
+
+  return (
+    <header className="bg-[#222] md:sticky top-0 z-10">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <CustomLink
+          href="/"
+          text={
+            <>
+              <ArrowLeftIcon className="w-4 h-4 ml-1" />
+              Portfolio
+            </>
+          }
+          className={`bg-gray-200 hover:bg-gray-700 ${NavButtonStyle}`}
+        />
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
+          {navLinks.map((link, index) => (
+            <CustomLink
+              key={index}
+              href={link.href}
+              text={link.text}
+              className="text-white hover:text-gray-300"
+            />
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;

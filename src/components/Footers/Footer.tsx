@@ -1,78 +1,36 @@
-// import CustomFooter from "../Footers/customFooter";
-// import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-// const LandingPageFooter = () => {
-//   return (
-//     <CustomFooter
-//       brandText="MyPortfolioWeb"
-//       navLinks={[
-//         { href: "#about", text: "About" },
-//         { href: "#projects", text: "Projects" },
-//         { href: "#skills", text: "Skills" },
-//       ]}
-//       socialLinks={[
-//         {
-//           href: "https://www.linkedin.com/in/slawomir-dyk-b35ab1177/",
-//           icon: <FaLinkedin size={20} />,
-//           label: "LinkedIn",
-//         },
-//         {
-//           href: "https://github.com/Slav666",
-//           icon: <FaGithub size={20} />,
-//           label: "GitHub",
-//         },
-//       ]}
-//     />
-//   );
-// };
-// export default LandingPageFooter;
 import React from "react";
-import Link from "next/link";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import CustomLink from "../../components/link/CustomLink";
+import { SocialMediaLinks } from "../composite-components/composite-components";
+import { RightReserved } from "../composite-components/composite-components";
 
 const Footer: React.FC = () => {
+  const navLinks = [
+    { href: "#about", text: "About" },
+    { href: "#projects", text: "Project" },
+    { href: "#skills", text: "Skills" },
+  ];
+
   return (
     <footer className="bg-[#222] text-gray-200 py-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-        {/* Logo or Brand Name */}
         <div className="mb-4 md:mb-0 text-center md:text-left">
-          {/* <Link href="/" className="text-white text-2xl font-bold"> */}
           MyPortfolioWeb
-          {/* </Link> */}
         </div>
-
-        {/* Navigation Links */}
         <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mb-4 md:mb-0">
-          <CustomLink href="#about" text="About" />
-          <CustomLink href="#projects" text="Projects" />
-          <CustomLink href="#skills" text="Skills" />
+          {navLinks.map((link, index) => (
+            <CustomLink
+              key={index}
+              href={link.href}
+              text={link.text}
+              className="text-white hover:text-gray-300"
+            />
+          ))}
         </div>
-
-        {/* Social Media Links */}
         <div className="flex space-x-4">
-          <a
-            href="https://www.linkedin.com/in/slawomir-dyk-b35ab1177/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            <FaLinkedin size={20} />
-          </a>
-          <a
-            href="https://github.com/Slav666"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            <FaGithub size={20} />
-          </a>
+          <SocialMediaLinks />
         </div>
       </div>
-
-      {/* Bottom Section */}
-      <div className="mt-8 text-center text-sm hover:text-gray-300 text-white">
-        <p>© {new Date().getFullYear()} MyPortfolioWeb. All rights reserved.</p>
-      </div>
+      <RightReserved />
     </footer>
   );
 };

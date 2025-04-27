@@ -1,24 +1,21 @@
-// import { FaLinkedin, FaGithub } from "react-icons/fa";
-// import CustomFooter from "../Footers/customFooter";
-// const ContactPageFooter = () => {
-//   return (
-//     <CustomFooter
-//       brandText="Main Page"
-//       navLinks={[]}
-//       socialLinks={[
-//         {
-//           href: "https://www.linkedin.com/in/slawomir-dyk-b35ab1177/",
-//           icon: <FaLinkedin size={20} />,
-//           label: "LinkedIn",
-//         },
-//         {
-//           href: "https://github.com/Slav666",
-//           icon: <FaGithub size={20} />,
-//           label: "GitHub",
-//         },
-//       ]}
-//     />
-//   );
-// };
+import React from "react";
+import { SocialMediaLinks } from "../composite-components/composite-components";
+import { RightReserved } from "../composite-components/composite-components";
 
-// export default ContactPageFooter;
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-[#222] text-gray-200 py-8">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <div className="mb-4 md:mb-0 text-center md:text-left">
+          MyPortfolioWeb
+        </div>
+        <section className="flex space-x-4">
+          <SocialMediaLinks />
+        </section>
+      </div>
+      <RightReserved />
+    </footer>
+  );
+};
+
+export default Footer;

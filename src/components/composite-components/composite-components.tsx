@@ -1,4 +1,6 @@
 import React, { FC, ReactNode } from "react";
+import Link from "next/link";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 interface SectionWrapperProps {
   isEven?: boolean;
@@ -66,3 +68,37 @@ export const DisplayArea = ({ children }: { children: ReactNode }) => (
     {children}
   </div>
 );
+
+export const SocialMediaLinks = () => {
+  return (
+    <>
+      <Link
+        href="https://www.linkedin.com/in/slawomir-dyk-b35ab1177/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-white transition-colors"
+      >
+        <FaLinkedin size={20} />
+      </Link>
+      <Link
+        href="https://github.com/Slav666"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-white transition-colors"
+      >
+        <FaGithub size={20} />
+      </Link>
+    </>
+  );
+};
+
+export const RightReserved = () => {
+  return (
+    <div className="mt-8 text-center text-sm hover:text-gray-300 text-white">
+      <p>© {new Date().getFullYear()} SlavPortfolioWeb. All rights reserved.</p>
+    </div>
+  );
+};
+
+export const NavButtonStyle =
+  "inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0";
