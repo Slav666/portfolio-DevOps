@@ -5,7 +5,10 @@ const ContactPage = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#222]">
       <ContactPageNaveBar />
-      <ContactForm />
+      <div className="flex-1">
+        <ContactForm />
+      </div>
+
       <CustomPageFooter />
     </div>
   );
