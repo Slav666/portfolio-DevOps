@@ -1,55 +1,29 @@
 import { ProjectData, TestimonialData, Skills } from "../types";
-import { TbBrandTypescript } from "react-icons/tb";
-import { SiMockserviceworker, SiReact } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-import { TbFileTypeHtml } from "react-icons/tb";
-import { TbBrandTailwind } from "react-icons/tb";
-import { SiStorybook } from "react-icons/si";
-import { SiJest } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
-import { SiCypress } from "react-icons/si";
-import { FaAws } from "react-icons/fa6";
-import { SiAmazonroute53 } from "react-icons/si";
-import { BsBucket } from "react-icons/bs";
-import { FaJava } from "react-icons/fa";
-import { FaGitSquare } from "react-icons/fa";
-import { GoRuby } from "react-icons/go";
-import { FaNode } from "react-icons/fa";
-import { SiSpring } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
-import { FaLinux } from "react-icons/fa";
-import { SiGnubash } from "react-icons/si";
-import { SiGithubactions } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
-
-// export const iconMap = {
-//   FaAws,
-//   FaNodeJs,
-//   SiReact,
-//   SiRedux,
-// };
 
 export const projects: ProjectData[] = [
   {
-    title: "FULL-STACK WEB APP DEPLOYMENT ON AWS WITH DOCKER & MONGODB ATLAS",
+    title: "TASK TRACKER WITH AWS & TERRAFORM",
     description:
-      "I am currently developing and deploying a full-stack web application on AWS using Elastic Container Service (ECS). The application consists of a React-based frontend and a Node.js backend, both running in Docker containers. The backend is connected to MongoDB Atlas, ensuring a managed and scalable database solution. To enhance performance and reliability, the frontend and backend communicate through an Application Load Balancer, which efficiently distributes traffic and ensures high availability. By leveraging AWS ECS, the application is designed for seamless scalability, resilience, and cloud-native deployment.",
-    code: "https://github.com/Slav666/docker-compose-app",
+      "This is a fullstack task management application built with React on the frontend, Node.js running on AWS Lambda for the backend, and Amazon DynamoDB as the database. Users can add new tasks, view their task list, and delete completed items — providing a simple yet functional task management flow. The primary goal of this project was to deepen my skills in Infrastructure as Code (IaC) using Terraform while building a real-world, cloud-native application. I used Terraform to provision and manage the entire frontend infrastructure, including an S3 bucket for static website hosting, CloudFront for global content delivery, Route 53 for custom domain setup, and DynamoDB for storing user data. The backend is designed as a serverless architecture with AWS Lambda, providing scalable and cost-efficient backend logic, connected through API Gateway. The frontend and database are fully deployed and operational on AWS, and I am currently finalizing the backend integration to complete the end-to-end workflow. Through this project, I gained practical, hands-on experience with AWS services, Terraform, and serverless application design — while strengthening my fullstack development expertise.",
+    code: "https://github.com/Slav666/Fullstack-aws-project",
     liveApp: "",
     technologies: [
       "/aws.png",
-      "/docker.png",
+      "/terraform-logo.png",
+      "/aws-dynamodb.svg",
+      "/gateway.png",
+      "/lambda.png",
+      "/s3-bucket.jpeg",
+      "/route53.png",
+      "/aws-cloudfront.png",
       "/logoReact.png",
-      "/mongodb.svg",
       "/nodejs-icon.svg",
     ],
-    image: "/doc-com-img.png",
+    image: "/project3.png",
   },
   {
     title: "THIS PORTFOLIO WEBSITE",
     description:
-      // "This portfolio website consists of six main sections: a navigation bar, an introduction about myself, a showcase of my past projects, a collection of technologies I have experience with, testimonials, and contact information. The primary goal of developing this application was to deepen my understanding of AWS S3 and GitHub Actions. Since the website is static, it is hosted on an S3 bucket, ensuring a cost-effective and scalable deployment. GitHub Actions automates the deployment process by seamlessly updating the live version whenever new code is pushed to the main branch. To provide a professional and secure experience, I’ve configured a custom domain purchased via GoDaddy, managed DNS settings with Route 53, and delivered the site using CloudFront for improved global performance. AWS Certificate Manager (ACM) was used to provision and attach an SSL certificate, ensuring encrypted HTTPS access. In the future, I plan to further enhance the website’s performance and add monitoring capabilities, while continuing to refine its design and accessibility.",
       "This portfolio website consists of six main sections: a navigation bar, an introduction about myself, a showcase of my past projects, a collection of technologies I have experience with, testimonials, and contact information. The primary goal of developing this application was to deepen my understanding of AWS services and CI/CD practices, particularly focusing on AWS S3 and GitHub Actions. Since the website is static, it is hosted on an S3 bucket, providing a cost-effective, highly available, and scalable deployment solution. GitHub Actions automates the deployment process by seamlessly updating the live version whenever new code is pushed to the main branch. To deliver a professional and secure user experience, I configured a custom domain (purchased via GoDaddy), managed DNS settings using AWS Route 53, and served the site through AWS CloudFront to improve global content delivery performance. SSL/TLS encryption is ensured with certificates provisioned via AWS Certificate Manager (ACM), allowing secure HTTPS access. Additionally, I implemented a dynamic contact form integrated with AWS services. Messages submitted through the form are processed via an AWS Lambda function and delivered to my email inbox using AWS Simple Email Service (SES), providing a secure and serverless way to manage user inquiries without exposing backend servers.In the future, I plan to further enhance the website’s performance, introduce basic monitoring (e.g., using AWS CloudWatch or third-party tools), and continue refining its design, accessibility, and responsiveness.",
     image: "/portimg.png",
     code: "https://github.com/Slav666/portfolio-DevOps",
@@ -174,6 +148,8 @@ export const devSkills: Skills[] = [
     tech: "AWS",
   },
   { icon: "/git-actions.png", tech: "G Actions" },
+  { icon: "/Kubernetes-logo.svg", tech: "Kubernetes" },
+  { icon: "/terraform-logo.png", tech: "Terraform" },
 ];
 
 export const infoData: string =
