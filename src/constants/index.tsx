@@ -2,6 +2,26 @@ import { ProjectData, TestimonialData, Skills } from "../types";
 
 export const projects: ProjectData[] = [
   {
+    title:
+      "ITEM FINDER – SERVERLESS HOME INVENTORY APP (Starter for Scalable AWS Projects)",
+    description:
+      "Item Finder is a fullstack web application that allows users to track and manage items within their home. It provides functionality to add, view, edit, and delete items, each consisting of a name, location, and type. The frontend is built using Next.js (App Router) with TypeScript and Axios, and is deployed as a static website to AWS S3. It is connected to a custom subdomain (item-finder.sdyk-portfolio.co.uk), with HTTPS and SSL via AWS Certificate Manager (ACM) planned as the next step to ensure secure communication. The backend of the application is entirely serverless. It uses AWS Lambda functions exposed through API Gateway to handle requests, while DynamoDB serves as the NoSQL database for storing item data. Each item has a unique ID generated using UUID. The REST API supports full CRUD operations (GET, POST, PUT, DELETE), and handles CORS properly — including OPTIONS preflight requests — to allow smooth interaction with the frontend hosted on a different domain. This version of the application serves as a foundational base for future development. It is fully functional in its current state and showcases modern best practices in deploying static frontend applications and building scalable serverless backends. However, there are several important features planned to improve performance, scalability, and usability. One major next step is implementing pagination, which will prevent performance issues that could arise from fetching all items from the DynamoDB table at once as the dataset grows. Additionally, integration with Amazon CloudFront is planned to serve the frontend through a global CDN, improving speed and latency. Other future improvements include user authentication (e.g., via AWS Cognito), multi-tag or category support for items, enhanced search and filtering features, image uploads (using S3 pre-signed URLs), and possibly a mobile version using React Native. These enhancements will evolve the application from a simple inventory tracker into a more powerful and user-friendly home management tool.",
+    code: "https://github.com/Slav666/home-organizer",
+    liveApp: "http://item-finder.sdyk-portfolio.co.uk/",
+    technologies: [
+      "/aws.png",
+      "/aws-dynamodb.svg",
+      "/gateway.png",
+      "/lambda.png",
+      "/s3-bucket.jpeg",
+      "/route53.png",
+      "/aws-cloudfront.png",
+      "/logoReact.png",
+      // "/nodejs-icon.svg",
+    ],
+    image: "/home-org.png",
+  },
+  {
     title: "TASK TRACKER WITH AWS & TERRAFORM",
     description:
       "This is a completed fullstack task management application built with React on the frontend, AWS Lambda (Node.js) for the backend, and Amazon DynamoDB as the database. Users can add new tasks, view their task list, and delete completed items — offering a simple yet effective task management workflow. The main goal of this project was to deepen my skills in Infrastructure as Code (IaC) and hands-on serverless architecture design using AWS. I used Terraform to provision and manage the entire frontend infrastructure: S3 for static website hosting, CloudFront for global content delivery, Route 53 for custom domain configuration. The backend and database were built manually using the AWS Management Console. I implemented the backend logic with AWS Lambda functions (Node.js), integrated with API Gateway for frontend communication. I chose this serverless architecture for its low cost and automatic scalability. Amazon DynamoDB is used as the serverless database to store user data and task lists. The project is fully completed — the frontend, backend, and database are all deployed and running in a production environment on AWS. Through this project, I gained practical experience with AWS services, frontend infrastructure automation with Terraform, and serverless application design, while further strengthening my fullstack development skills.",
